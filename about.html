@@ -1,394 +1,138 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>iCOOK</title>
-     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-     integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-      <link rel="stylesheet" type="text/css" href="index.css">
-    
-     
-     
-     
-<style>
-
-
-.container {
-           margin-top: 80px;
-           background-image: URL ("https://assets.surlatable.com/m/1620a0a106687e33/72_dpi_webp-6826416_1123_01i_s");
-           padding: 40px;
-}
-  
-  
-.text-block {
-            position: absolute;
-            top: 180 px;
-            left: 10 px;
-            background-color: transparent;
-            padding-left: 30 %;
-            padding-right: 20 px;
-            vertical-align: middle; 
-            border-radius: 0px 25px 25px 0px;
-            text-align: left; 
-}
-  
-.wide {
-       border: 2 px solid;
-       padding: 20 px; 
-       width: 300 px;
-       resize: horizontal;
-       overflow: auto;
-       margin-left: 0;
-       margin-right: 0;  
-}
-  
-.email {
-       color: RGB (64, 64, 64);
-       text-align: center;
-       margin-left: auto;
-       margin-right: auto;
-}
-  
-
-.navbar-nav {
-            background-color: #fdf9f9;
-            font-family: Verdana, Geneva, Tahoma, sans-serif;
-            font-style: normal;
-}
- 
-.navbar-toggle {
-              z-index:3;
-}
-
-.navbar-brand {
-              position: relative;
-              width: 55%;
-              left: 0;
-              margin:0 auto;
-              font-size: 30px; 
-              font-weight: 300;
-              font-family: Verdana, Geneva, Tahoma, sans-serif;
-              text-align: center;
-              justify-content: center;
-              background-color: #f9f8f8; 
-}
-  
-.nav-item:hover {
-                font-family: Verdana, Geneva, Tahoma, sans-serif;
-                color: #be1919;
-                background-color: #f2f3f2;
-                border-radius: 50px;
-}
-
-.button {
-        background-color: #1e8e24;
-        border: #ffffff;
-        border-radius: 100px;
-        border: none;
-        color: white;
-        padding: 10px 25px;
-        text-align: center;
-        text-decoration: none;
-        display: inline-block;
-        font-size: 16px;
-        margin: 4px 2px;
-        cursor: pointer;  
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
-
-.button: hover {
-               background-color: #16681a;
-}
-
-
-.video-block {
-             position: relative;
-             right: 0;
-             bottom: 0;
-             width: 100%;
-             height: auto;
-}
-
-
-.img-text {
-          border-color: RGB (197, 56, 56);
-          border-radius: 25px;
-          border-style: ridge;
-          outline:RGB (255, 255, 255)
-          border-width: 5px;
-          style: square; 
-}  
-
-
-.text-block h4 {
-               color: #ffffff;
-}
-
-
-.container {
-           max-width: 1200px; 
-           margin: 50 auto; 
-           padding: 0 20px;
-}
-
-
-.img {
-  border-radius: 25%;
-}
-
-
-.column {
-        float: left;
-        width: 33.33%;
-        padding: 5px;
-        width: 33.3%;
-}
-
-.image {
-       border-radius: 20%;
-       width: 100%;
-}
-
-h1 {
-   font-family: Verdana, Geneva, Tahoma, sans-serif; 
-   color: light black;
-   font-size: 25px;
-   vertical-align: middle;
-   margin-top: 1pc;
-}
-
-
-h4 {
-   font-family: Verdana, Geneva, Tahoma, sans-serif;
-   color: RGB (147, 152, 149); 
-   border-radius: 25px;
-   line-height: 1.3;
-}
-
-
-.thumbnail {
-           width: 100%;
-}
-
-
-.image {
-       border-radius: 25px;
-}        
-
-
-h5 {
-   text-align: center;
-   margin-top: 50px;
-}
-
-
-.center {
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        border-radius: 0px 70px 0px 70px;
-}
-
-  
-.centered {
-          font-size: large;
-          color: RGB (130, 130, 134);
-          margin-top: 30px;
-          margin-left: auto;
-}
-
-
-.footer {
-        background: scroll;
-        background-color: #f4eeee;
-        bottom: 0;
-        left: 0;
-        width: 100%;
-        text-align: center;
-        display: inline-block;
-        line-height: 2;
-        margin-top: 0%;
-        overflow: hidden;
-        clear: both;
-}
-
-
-footer {
-       background-color: #f4eeee; 
-       padding: 10px;
-       text-align: center;
-       font-size: 0.9em;
-}
-
-
-footer nav ul {
-              list-style: none; 
-              padding: 0;
-              margin: 0;
-}
-
-footer nav ul li {
-                 display: inline-block; 
-                 margin: 0 10px; 
-}
-
-footer nav a {
-             text-decoration: none; 
-             color: #181a19; 
-}
-
-
-.inline-block {
-              display: inline-block;
-              margin: 0 10px;
-              line-height: 1;
-   
- }
-
-.brand-logo {
-            text-align: right;
-}
-
-
-
-
-</style>
-
- </head>  
-
-<body>
-
-
-<!--NAVIGATION BAR-->
-   
-<nav class="navbar navbar-expand-lg navbar-light bg-light"> 
-  <a class="navbar-brand" href="#"><strong>iCOOK</strong><img src="https://www.globallearningpartners.com/wp-content/uploads/migrated/images/Not_You_2.png" width="50" height="25" alt="navbar-brand"></a> 
-
-   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-      <div class="navbar-nav">
-       
-        <a class="nav-item nav-link active" href="index.html">Home <span class="sr-only"></span></a>
-        <a class="nav-item nav-link" href="menu.html">Menu</a>
-        <a class="nav-item nav-link" href="about.html">About</a>
-        <a class="nav-item nav-link" href="contact.html">Contact</a>
-       
+<html lang="en-US">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="iCook - your local private chef. Responsive website for booking private chefs.">
+  <title>iCook | Your Local Private Chef</title>
+  <link href="https://fonts.googleapis.com/css2?family=Short+Stack&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body> 
+  <header>
+    <nav class="navbar">
+      <div class="brand">
+         <img src="images/Logo11.png" alt="iCOOK Logo">
       </div>
+      
+      <input type="checkbox" id="menu-toggle" class="menu-toggle">
+      <label for="menu-toggle" class="hamburger">
+        <img src="images/MenuIIcon7.png" alt="Menu" />
+      </label>
+
+      <ul class="nav-links">
+        <li><a href="index.html">home</a></li>
+        <li><a href="menu.html">menu</a></li>
+        <li><a href="about.html">about</a></li>
+        <li><a href="contact.html">contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  
+
+  <!-- MAIN SCREEN VIDEO-->
+  <div class="video-container">
+    <video autoplay muted loop playsinline class="background-video">
+      <source src="images/AboutMainVideo.mp4" type="video/mp4">
+      <source src="images/HomeMainVideo1.mov" type="video/quicktime">
+      Your browser does not support the video tag.
+    </video>
+    <div class="video-text">
+      <h2>HAVE A GOOD RESTaurant</h2>
+      <p><strong> with our chef at your home or office</strong></p>
     </div>
-  </nav>
-
-<!--NAVIGATION BAR-->
-
-
-
-
-<!--MAIN SCREEN-->
-
-<header>
-  <video class="video-block" autoplay loop muted="myVideo">
-    <source src="https://www.shutterstock.com/shutterstock/videos/28204231/preview/stock-footage-close-up-of-a-chef-preparing-flambe-style-dish-on-a-pan-oil-and-alcohol-ignite-with-open-flames.webm" type="video/mp4">    
-  </video>
-   
-<div class="text-block">
-    <h1>HAVE A GOOD RESTaurant
-    <p>WITH our CHEF in your HOME & OFFICE</h1>
-    
- 
-    <a href="file:///Users/anutagreentree/Desktop/iCOOK%20project/contact.html#form">
-      <input type="button" class="button" value="Hire me"> 
-    </a>
   </div>
-</div>
-</header>
-  
-<!--MAIN SCREEN-->
 
-  
-    
- <!--OUR STORY--> 
+   <a href="contact.html#contact" class="book-btn">
+    <svg width="100" height="100" viewBox="0 0 100 100">
+      <defs>
+        <path id="circlePath" d="M50,50 m-40,0 a40,40 0 1,1 80,0 a40,40 0 1,1 -80,0"/>
+      </defs>
+      <text fill="white" font-size="13" font-weight="300">
+        <textPath href="#circlePath" startOffset="3%">
+          BOOK NOW BOOK NOW BOOK BOOK NOW BOOK
+        </textPath>
+      </text>
+    </svg>
+  </a>
 
 
-   
+  <!--OUR STORY--> 
+  <section>
+    <div class="container center content form-frame" id="mg" style="max-width:900px">
+      
+      <div class="section-about">
+        <h2 class="name">Melania Greentree</h2>
+        <p class="chef-title">Chef - iCOOK</p>
 
-
-      <div class="container center content" id="mg" style="max-width:700px">
-        <h2 class="wide">Melania Greentree</h2>
-        <p class="opacity"><i>Chef</i></p>
-        The History of Kitchens and Cooks gives further intimation on Mr Boulanger usual menu, stating
-          confidently that "Boulanger served salted poultry and fresh eggs, all presented without a tablecloth
-          on small marble tables". Numerous commentators have also referred to the supposed restaurant owner's
-          eccentric habit of touting for custom outside his establishment, dressed in aristocratic fashion and
-          brandishing a sword
-          <br><br>
-          Numerous commentators have also referred to the supposed restaurant owner's eccentric habit of
-          touting for custom outside his establishment, dressed in aristocratic fashion and brandishing a
-          sword.
-
-          Restaurants often serve portion sizes greater than the average person’s needs, sometimes as much as two to three times larger than the recommended dietary guidelines. This encourages you to eat more than you would at home, having the potential to adversely affect your waistline, blood pressure, and risk of diabetes.
-    <br>
-    Cooking at home can even take less time than eating out. There are plenty of quick, simple, and wholesome meals you can cook at home in less time than it takes to travel to a restaurant or wait for a delivery.
-
-Cooking at home is also a great way to spend time with others—and you don’t have to be an accomplished chef. Whatever your abilities or experience as a cook, you can learn to prepare quick and healthy meals that can have real benefits for your mental and physical health. Cooking with others is also a great way to spend quality time and learn new skills together.
+        <p>
+          Our chef has loved food for as long as she can remember. By the time she was 12, she was already 
+          spending most of her free time in the kitchen, cooking regularly for family and friends. She has a 
+          special gift—whatever you have in the fridge, she can turn it into something tasty! She just knows 
+          what ingredients go well together and which ones don’t.
+        </p>
+        <p>
+          At 19, she landed her very first job in a popular UK restaurant. She started out as an assistant, but 
+          in only a few months her hard work and talent got her promoted to chef.
+          She’s not only passionate about cooking—she’s also responsible, reliable, and has a great sense of 
+          humor that makes everyone around her feel at ease.
+        </p>
+        <p>
+          And here’s a fun fact: while working as a chef, she’s also finishing her last year of studies for a 
+          bachelor’s degree in International Relations. Cooking has always been her way of sharing love, joy, 
+          and creativity with everyone she meets—and that passion is what makes her food truly special.
         </p>
       </div>
-      
-      </section>
-</body>
-  
-        
- 
-    <div class="container center content" style="max-width:400px">    
-<img src="/Users/anutagreentree/Downloads/3b8e1ae6-e617-4010-b229-5b494d5f86d2.JPG" alt="" width="400" height="520" id="mg" class="center"/>
-    </div>
+      <div class="chef-image-wrapper">
+        <img src="images/ChefMelashka.jpg" 
+             alt="Chef Melania Greentree" 
+             class="chef-image" />
+      </div>
+      <div class="email" style="max-width:700px">
+        <h6 class="email">
+          <strong>melania.greentree@gmail.com</strong>
+        </h6>     
       </div>
 
-<br>
-
-      <div class="email" id="mg" style="max-width:700px">
-        <h6 class="email">Email:<strong>melania.greentree@gmil.com</strong></h6>     
-     
-
-      </div>  
-
-<br>
-<br>      
-</body>
-      
-  
+    </div>
+  </section>
 
 
+  <!--FOOTER-->
+  <footer>
+    <div class="footer-top">
+      <div class="footer-logo">
+        <img src="images/Logo11.png" alt="Logo">
+      </div>
 
+      <div class="footer-social">
+        <a href="#"><img src="images/Facebook.png" alt="Facebook"></a>
+        <a href="#"><img src="images/Instagram.png" alt="Instagram"></a>
+        <a href="#"><img src="images/TwitterLogo.png" alt="Twitter"></a>
+      </div>
 
-
-
-<!--FOOTER-->
-
-<footer>
-
-  <div class="footer">
-    <nav>
+      <nav class="footer-nav">
         <ul>
-            <li><a href="about.html">About</a></li>
-            <li><a href="menu.html">Menu</a></li>
-            <li><a href="contact.html">Contact</a></li>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="menu.html">Menu</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
         </ul>
-    </nav>
+      </nav>
+    </div>
 
-   <div class="inline-block">
-         <p>Follow us on: 
-<a href="http://www.facebook.com/anna.greentree"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Facebook_Logo_%282019%29.png/768px-Facebook_Logo_%282019%29.png" width="20" height="20"></a>
-<a href="http://www.instagram.com/anna.greentree"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Instagram_icon.png/640px-Instagram_icon.png" width="20" height="20"></a>
-<a href="https://x.com/GreentreeAnna"><img src="https://static.vecteezy.com/system/resources/previews/016/716/467/non_2x/twitter-icon-free-png.png" width="20" height="20"></a>
+    <div class="footer-search">
+      <form action="search.html" method="get">
+        <input type="text" name="q" placeholder="Search..." required>
+        <button type="submit">Search</button>
+      </form>
+    </div>
 
-<p>&copy; 2025 iCOOK.</p> 
-
-</div>
-  </div>
-</footer>   
-
-<!--FOOTER-->
-
+    <div class="footer-bottom">
+      <p>&copy; 2025 iCOOK. All Rights Reserved.</p>
+    </div>
+  </footer>
+</body>
 </html>
